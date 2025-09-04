@@ -1,5 +1,192 @@
 *{margin: 0;
 padding: 0;}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.menu a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 60px;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #222;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  border-color: #9c6bff;
+}
+
+.btn-green {
+  background-color:darkgreen;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.nav-buttons button {
+  flex: 1;
+  margin: 0 5px;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.nav-buttons .highlighted{
+  background-color:darkgreen;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 60px 0;
+}
+
+.hero-left h1 span {
+  color: #9c6bff;
+  font-size: 30px;
+}
+.hero-left .green{
+  color: green;
+}
+.hero-left p {
+  color: #ccc;
+  margin: 50px 0;
+  font-size: 20px;
+}
+
+.btn {
+  background: #9c6bff;
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero-right {
+  display: flex;
+  align-items: flex-end;
+  gap: 50px;
+}
+
+.chart {
+  position: relative;
+  width: 300px;
+  height: 250px;
+}
+
+.chart img {
+  position: absolute;
+}
+
+.chart .line {
+  width: 120%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.chart .bars {
+  width: 120%;
+  bottom: 10px;
+  left: 20px;
+  z-index: 2;
+}
+.chart .line{
+bottom: 90px;
+}
+.sneaker {
+  width: 480px;
+  transform: translateY(40px);
+}
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-right {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sneaker {
+    transform: translateY(0);
+    width: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    margin: 10px 0;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .auth-buttons button {
+    width: 100%;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+  }
+
+  .nav-buttons button {
+    width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 28px;
+  }
+
+  .hero-left p {
+    font-size: 16px;
+  }
+}
 
 body {
   font-family: Arial, sans-serif;
